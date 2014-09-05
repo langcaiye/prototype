@@ -9,5 +9,8 @@
 import UIKit
 
 class LineViewController:UITableViewController{
-    
+    var name:String = "Dean"
+    var game:String = "FunGame"
+    var rating:Int = 5
+    //var players:NSM =
 }

@@ -22,7 +22,7 @@ class settingViewController: UIViewController {
     
     //func to return to the first screen
     func settingDone(sender: UIButton){
-        self.presentingViewController.presentingViewController.dismissModalViewControllerAnimated(true)
+        self.presentingViewController.presentingViewController.dismissViewControllerAnimated(true, nil)
     }
     
     override func didReceiveMemoryWarning() {

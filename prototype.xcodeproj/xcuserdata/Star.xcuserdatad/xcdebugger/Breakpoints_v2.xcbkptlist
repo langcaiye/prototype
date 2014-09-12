@@ -38,45 +38,43 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
-            timestampString = "431769881.261007"
+            filePath = "prototype/loginViewController.swift"
+            timestampString = "431864621.476806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            startingLineNumber = "9"
+            endingLineNumber = "9">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "prototype.settingViewController.viewDidLoad (prototype.settingViewController)() -&gt; ()"
+                  symbolName = "prototype.loginViewController.__deallocating_deinit"
                   moduleName = "prototype"
-                  urlString = "file:///Users/Star/Documents/prototype-master/prototype/settingViewController.swift"
-                  timestampString = "431767875.501824"
+                  urlString = "file:///Users/Star/Documents/app/prototype-master/prototype/loginViewController.swift"
+                  timestampString = "431972723.926835"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "151">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "26">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "prototype.settingViewController.viewDidLoad (prototype.settingViewController)() -&gt; ()"
+                  symbolName = "@objc prototype.loginViewController.__ivar_destroyer"
                   moduleName = "prototype"
-                  urlString = "file:///Users/Star/Documents/prototype-master/prototype/settingViewController.swift"
-                  timestampString = "431767875.502102"
+                  urlString = "file:///Users/Star/Documents/app/prototype-master/prototype/loginViewController.swift"
+                  timestampString = "431972723.92701"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "379">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -87,13 +85,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
-            timestampString = "431769881.261007"
+            filePath = "prototype/loginViewController.swift"
+            timestampString = "432204499.232427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "login(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "prototype/loginViewController.swift"
+            timestampString = "432204499.232427"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "login(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "prototype/mainNavigationController.swift"
+            timestampString = "432199272.020463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testLogin()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

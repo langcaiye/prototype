@@ -1,5 +1,5 @@
 //
-//  settingViewController.swift
+//  initViewController.swift
 //  prototype
 //
 //  Created by Star on 14-9-7.
@@ -8,26 +8,41 @@
 
 import UIKit
 
-class settingViewController: UIViewController {
-    @IBOutlet var doneBTN : UIButton
+class loginViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //button for submit all settings and return.
-        doneBTN.addTarget(self,action:"settingDone:",forControlEvents:UIControlEvents.TouchDown)
+
+    @IBOutlet var loginName : UITextField
+    @IBOutlet var loginSecr : UITextField
+    @IBOutlet var loginBTN : UIButton
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        // Custom initialization
     }
     
-    //func to return to the first screen
-    func settingDone(sender: UIButton){
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder:aDecoder)
+    }
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
-        let content = "UserName:a;UserSecret:c"
+        loginBTN.addTarget(self,action:"login:",forControlEvents:UIControlEvents.TouchDown)
+        
+    }
+    
+    func login(sender: UIButton){
+        
+        let content = "UserName:" + loginName.text + ";UserSecret:" + loginSecr.text
         println(content)
         let contenDate = content.dataUsingEncoding(NSUTF8StringEncoding)
         
         var path:NSString=NSHomeDirectory();
         var fileName:NSString="/lc.txt" //login crendential
         path=path.stringByAppendingString(fileName)
-        //        println(path);
+//        println(path);
         
         var file=NSFileManager()
         if ( !file.fileExistsAtPath(path)) {
@@ -39,9 +54,6 @@ class settingViewController: UIViewController {
             var str:NSString = NSString.stringWithContentsOfFile(path,encoding:NSUTF8StringEncoding,error:nil)
             println(str)
         }
-        
-        
-        self.presentingViewController.presentingViewController.presentingViewController.dismissViewControllerAnimated(true,nil)
         
     }
     

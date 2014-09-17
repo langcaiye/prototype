@@ -17,22 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
-        var _players = Array<LineViewController>()
-        var player = LineViewController()
-        player.name = "Bill Evans";
-        player.game = "Tic-Tac-Toe";
-        player.rating = 4;
-        _players.append(player)
-        
-        player.name = "Oscar Peterson"
-        player.game = "Spin the Bottle"
-        player.rating = 5
-        _players.append(player)
-        
-        player.name = "Dave Brubeck"
-        player.game = "Texas Hold’em Poker"
-        player.rating = 2
-        _players.append(player)
         
         var navigationController = self.window?.rootViewController
         var loginViewController = [navigationController][0]

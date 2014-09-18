@@ -8,14 +8,62 @@
 
 import UIKit
 
-class settingViewController: UIViewController {
+class settingViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet var doneBTN : UIButton
-
+    @IBOutlet var setImageBTN : UIButton
+    @IBOutlet var userImage : UIImageView
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //button for submit all settings and return.
         doneBTN.addTarget(self,action:"settingDone:",forControlEvents:UIControlEvents.TouchDown)
+        setImageBTN.addTarget(self,action:"setImage:",forControlEvents:UIControlEvents.TouchDown)
     }
+    
+    func setImage(sender: UIButton){
+        var alert = UIAlertController(title:"选择",message:nil,preferredStyle:.ActionSheet)
+        var cameraAct = UIAlertAction(title:"拍照",style:.Default) {
+            [weak alert] action in
+                // show camera
+                var imagepicker:UIImagePickerController = UIImagePickerController()
+                imagepicker.delegate = self
+                imagepicker.sourceType = .Camera
+                self.presentModalViewController(imagepicker,animated:true)
+            alert!.dismissViewControllerAnimated(true, completion: nil)
+        }
+        var photoAct = UIAlertAction(title:"相册",style:.Default) {
+            [weak alert] action in
+                //show photo library
+                var imagepicker:UIImagePickerController = UIImagePickerController()
+                imagepicker.delegate = self
+                imagepicker.sourceType = .SavedPhotosAlbum
+                imagepicker.allowsEditing = true
+                self.presentModalViewController(imagepicker,animated:true)
+            
+                //get a photo
+            alert!.dismissViewControllerAnimated(true, completion: nil)
+        }
+        var cancelAct = UIAlertAction(title:"cacel",style:.Destructive,nil)
+        alert.addAction(cameraAct)
+        alert.addAction(photoAct)
+        alert.addAction(cancelAct)
+        
+        self.presentViewController(alert,animated: true,nil)
+    }
+    
+    
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!){
+        picker.dismissViewControllerAnimated(true,completion:nil)
+        var image:UIImage = info.objectForKey(UIImagePickerControllerOriginalImage) as UIImage
+        userImage.animationImages = [image]
+        userImage.startAnimating()
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController!){
+        self.dismissViewControllerAnimated(true,completion:nil)
+    }
+    
     
     //func to return to the first screen
     func settingDone(sender: UIButton){

@@ -10,7 +10,7 @@ import UIKit
 
 class LineViewController:UITableViewController, UITableViewDataSource, UITableViewDelegate,DataGeterProtcol{
     
-    @IBOutlet var appsTableView : UITableView?
+    @IBOutlet var appsTableView : UITableView!
     var tableData:NSMutableDictionary = NSMutableDictionary()
     var dataGeter = DataGeter()
     
@@ -25,14 +25,14 @@ class LineViewController:UITableViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int{
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return tableData.count
     }
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
-        cell.textLabel.text = self.tableData.objectForKey("name") as String
-        cell.detailTextLabel.text = "1"
+//        cell.textLabel.text = self.tableData.objectForKey("name") as String
+//        cell.detailTextLabel.text = "1"
         println("done")
         return cell
     }

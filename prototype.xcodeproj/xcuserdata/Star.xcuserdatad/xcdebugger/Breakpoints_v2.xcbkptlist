@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
+            filePath = "prototype/settingVC.swift"
             timestampString = "431767854.042446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "settingViewController"
+            landmarkName = "settingVC"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
+            filePath = "prototype/settingVC.swift"
             timestampString = "431767871.535246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10"
-            landmarkName = "settingViewController"
+            landmarkName = "settingVC"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,7 +41,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/loginViewController.swift"
+            filePath = "prototype/loginVC.swift"
             timestampString = "431864621.476806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -55,28 +55,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/loginViewController.swift"
-            timestampString = "432204499.232427"
+            filePath = "prototype/loginVC.swift"
+            timestampString = "434795620.279301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "login(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "prototype/loginViewController.swift"
-            timestampString = "432204499.232427"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "login(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -87,7 +71,23 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/mainNavigationController.swift"
+            filePath = "prototype/loginVC.swift"
+            timestampString = "434795620.279301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "login(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "prototype/mainNC.swift"
             timestampString = "432199272.020463"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -193,12 +193,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
-            timestampString = "432739081.529207"
+            filePath = "prototype/settingVC.swift"
+            timestampString = "434701250.365702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "setImage(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -209,13 +209,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "prototype/settingViewController.swift"
-            timestampString = "432741918.591889"
+            filePath = "prototype/settingVC.swift"
+            timestampString = "434701250.365702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "setImage(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "prototype/phoneVaildationVC.swift"
+            timestampString = "434795620.279301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "connection(_:didReceiveData:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

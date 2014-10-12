@@ -14,10 +14,13 @@
 		DAEDDA5419AE207C007E68AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAEDDA5319AE207C007E68AE /* Images.xcassets */; };
 		DAEDDA6019AE207C007E68AE /* prototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDDA5F19AE207C007E68AE /* prototypeTests.swift */; };
 		F83C1B2319C9C3AD00E5C5D6 /* passager.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F83C1B2219C9C3AD00E5C5D6 /* passager.tiff */; };
+		F84070DC19EA4DEB00067A93 /* phoneVaildationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84070DB19EA4DEB00067A93 /* phoneVaildationVC.swift */; };
+		F84070EB19EA55F200067A93 /* variables.strings in Resources */ = {isa = PBXBuildFile; fileRef = F84070EA19EA55F200067A93 /* variables.strings */; };
 		F85331BD19C592D50013BCC8 /* DataGeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85331BC19C592D50013BCC8 /* DataGeter.swift */; };
-		F86E53C819BF30CA009086FD /* mainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E53C719BF30CA009086FD /* mainNavigationController.swift */; };
-		F883147219BC34B10051BC38 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883147119BC34B10051BC38 /* settingViewController.swift */; };
-		F883147619BC44620051BC38 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883147519BC44620051BC38 /* loginViewController.swift */; };
+		F86E53C819BF30CA009086FD /* mainNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E53C719BF30CA009086FD /* mainNC.swift */; };
+		F883147219BC34B10051BC38 /* settingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883147119BC34B10051BC38 /* settingVC.swift */; };
+		F883147619BC44620051BC38 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883147519BC44620051BC38 /* loginVC.swift */; };
+		F8EA3FD719CEB046003CD0B7 /* selectingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA3FD619CEB046003CD0B7 /* selectingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +45,13 @@
 		DAEDDA5E19AE207C007E68AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAEDDA5F19AE207C007E68AE /* prototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prototypeTests.swift; sourceTree = "<group>"; };
 		F83C1B2219C9C3AD00E5C5D6 /* passager.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = passager.tiff; sourceTree = "<group>"; };
+		F84070DB19EA4DEB00067A93 /* phoneVaildationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = phoneVaildationVC.swift; sourceTree = "<group>"; };
+		F84070EA19EA55F200067A93 /* variables.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = variables.strings; path = ../variables.strings; sourceTree = "<group>"; };
 		F85331BC19C592D50013BCC8 /* DataGeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGeter.swift; sourceTree = "<group>"; };
-		F86E53C719BF30CA009086FD /* mainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainNavigationController.swift; sourceTree = "<group>"; };
-		F883147119BC34B10051BC38 /* settingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
-		F883147519BC44620051BC38 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		F86E53C719BF30CA009086FD /* mainNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainNC.swift; sourceTree = "<group>"; };
+		F883147119BC34B10051BC38 /* settingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingVC.swift; sourceTree = "<group>"; };
+		F883147519BC44620051BC38 /* loginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		F8EA3FD619CEB046003CD0B7 /* selectingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,15 +93,18 @@
 		DAEDDA4919AE207B007E68AE /* prototype */ = {
 			isa = PBXGroup;
 			children = (
-				DAEDDA6919AE27F6007E68AE /* images */,
+				F84070EA19EA55F200067A93 /* variables.strings */,
+				F8EA3FD619CEB046003CD0B7 /* selectingVC.swift */,
 				DAAFC34519B4BBF80074C7F9 /* LineViewController.swift */,
-				F883147119BC34B10051BC38 /* settingViewController.swift */,
+				F883147119BC34B10051BC38 /* settingVC.swift */,
 				DAEDDA4C19AE207B007E68AE /* AppDelegate.swift */,
 				DAEDDA4E19AE207C007E68AE /* ViewController.swift */,
 				DAEDDA5019AE207C007E68AE /* Main.storyboard */,
-				F86E53C719BF30CA009086FD /* mainNavigationController.swift */,
-				F883147519BC44620051BC38 /* loginViewController.swift */,
+				F84070DB19EA4DEB00067A93 /* phoneVaildationVC.swift */,
+				F86E53C719BF30CA009086FD /* mainNC.swift */,
+				F883147519BC44620051BC38 /* loginVC.swift */,
 				DAEDDA5319AE207C007E68AE /* Images.xcassets */,
+				DAEDDA6919AE27F6007E68AE /* images */,
 				DAEDDA4A19AE207B007E68AE /* Supporting Files */,
 				F85331BC19C592D50013BCC8 /* DataGeter.swift */,
 			);
@@ -217,6 +226,7 @@
 			files = (
 				DAEDDA5219AE207C007E68AE /* Main.storyboard in Resources */,
 				DAEDDA5419AE207C007E68AE /* Images.xcassets in Resources */,
+				F84070EB19EA55F200067A93 /* variables.strings in Resources */,
 				F83C1B2319C9C3AD00E5C5D6 /* passager.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,13 +245,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F883147619BC44620051BC38 /* loginViewController.swift in Sources */,
+				F883147619BC44620051BC38 /* loginVC.swift in Sources */,
+				F84070DC19EA4DEB00067A93 /* phoneVaildationVC.swift in Sources */,
 				DAEDDA4F19AE207C007E68AE /* ViewController.swift in Sources */,
 				DAEDDA4D19AE207B007E68AE /* AppDelegate.swift in Sources */,
 				DAAFC34619B4BBF80074C7F9 /* LineViewController.swift in Sources */,
-				F883147219BC34B10051BC38 /* settingViewController.swift in Sources */,
+				F883147219BC34B10051BC38 /* settingVC.swift in Sources */,
+				F8EA3FD719CEB046003CD0B7 /* selectingVC.swift in Sources */,
 				F85331BD19C592D50013BCC8 /* DataGeter.swift in Sources */,
-				F86E53C819BF30CA009086FD /* mainNavigationController.swift in Sources */,
+				F86E53C819BF30CA009086FD /* mainNC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

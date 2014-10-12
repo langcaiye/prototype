@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var navigationController = self.window?.rootViewController
         var loginViewController = [navigationController][0]
-        //var tabBarController = [loginViewController][
-        
+        //var tabBarController = [loginViewController][        
         return true
     }
 

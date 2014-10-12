@@ -8,7 +8,7 @@
 
 import UIKit
 
-class mainNavigationController: UINavigationController {
+class mainNC: UINavigationController {
 
 
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class mainNavigationController: UINavigationController {
         var file=NSFileManager()
         if ( !file.fileExistsAtPath(path)) {
             println("file not existing")
-            
+            //show login viewcontroller
             var sty = UIStoryboard(name: "Main",bundle: nil)
             var loginVC:UIViewController = sty.instantiateViewControllerWithIdentifier("loginView") as UIViewController
             

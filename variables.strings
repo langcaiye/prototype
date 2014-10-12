@@ -1,0 +1,11 @@
+/* 
+  variables.strings
+  prototype
+
+  Created by Star on 14-10-12.
+  Copyright (c) 2014年 langcaiye. All rights reserved.
+*/
+
+
+sendCodeWS="http://dev.kuaipinche.com/app/user/sendvalidationcode.do?";
+valiCodeWS="http://dev.kuaipinche.com/app/user/checkvalidationcode.do?";

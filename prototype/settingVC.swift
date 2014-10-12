@@ -8,10 +8,11 @@
 
 import UIKit
 
-class settingViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    @IBOutlet var doneBTN : UIButton
-    @IBOutlet var setImageBTN : UIButton
-    @IBOutlet var userImage : UIImageView
+class settingVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    @IBOutlet var doneBTN : UIButton!
+    @IBOutlet var setImageBTN : UIButton!
+    @IBOutlet var userImage : UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class settingViewController: UIViewController,UIImagePickerControllerDelegate,UI
                 var imagepicker:UIImagePickerController = UIImagePickerController()
                 imagepicker.delegate = self
                 imagepicker.sourceType = .Camera
-                self.presentModalViewController(imagepicker,animated:true)
+                self.presentViewController(imagepicker,animated:true,completion: nil)
             alert!.dismissViewControllerAnimated(true, completion: nil)
         }
         var photoAct = UIAlertAction(title:"相册",style:.Default) {
@@ -38,12 +39,12 @@ class settingViewController: UIViewController,UIImagePickerControllerDelegate,UI
                 imagepicker.delegate = self
                 imagepicker.sourceType = .SavedPhotosAlbum
                 imagepicker.allowsEditing = true
-                self.presentModalViewController(imagepicker,animated:true)
+                self.presentViewController(imagepicker,animated:true,completion: nil)
             
                 //get a photo
             alert!.dismissViewControllerAnimated(true, completion: nil)
         }
-        var cancelAct = UIAlertAction(title:"cacel",style:.Destructive,nil)
+        var cancelAct = UIAlertAction(title:"cancel",style:.Destructive,nil)
         alert.addAction(cameraAct)
         alert.addAction(photoAct)
         alert.addAction(cancelAct)
@@ -89,7 +90,8 @@ class settingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }
         
         
-        self.presentingViewController.presentingViewController.presentingViewController.dismissViewControllerAnimated(true,nil)
+//        self.presentingViewController.presentingViewController.presentingViewController.dismissViewControllerAnimated(true,nil)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, nil)
         
     }
     

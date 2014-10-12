@@ -8,29 +8,17 @@
 
 import UIKit
 
-class loginViewController: UIViewController {
+class loginVC: UIViewController {
 
 
-    @IBOutlet var loginName : UITextField
-    @IBOutlet var loginSecr : UITextField
-    @IBOutlet var loginBTN : UIButton
-    
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        // Custom initialization
-    }
-    
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder:aDecoder)
-    }
-
+    @IBOutlet var loginName : UITextField!
+    @IBOutlet var loginSecr : UITextField!
+    @IBOutlet var loginBTN : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         loginBTN.addTarget(self,action:"login:",forControlEvents:UIControlEvents.TouchDown)
-        
     }
     
     func login(sender: UIButton){
